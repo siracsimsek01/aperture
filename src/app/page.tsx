@@ -39,29 +39,29 @@ export default function Home() {
         <div className="flex flex-wrap justify-center items-center px-36 mt-10 gap-4">
 
           <div className={classes.productPhotography}>
-            <h5>Product Photography</h5>
-            <p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+            <h5 className="text-white uppercase text-sm font-normal leading-tight tracking-wide">Product Photography</h5>
+            <p className="text-stone-300 text-sm font-normal leading-tight pt-3">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
             <PrimaryButton>
               Read More
             </PrimaryButton>
           </div>
           <div className={classes.architecturePhotography}>
-            <h5>Architecture Photography</h5>
-            <p>Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+            <h5 className="text-white uppercase text-sm font-normal leading-tight tracking-wide">Architecture Photography</h5>
+            <p className="text-stone-300 text-sm font-normal leading-tight pt-3">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
             <PrimaryButton>
               Read More
             </PrimaryButton>
           </div>
           <div className={classes.dronePhotography}>
-            <h5>Drone Photography</h5>
-            <p>Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+            <h5 className="text-white uppercase text-sm font-normal leading-tight tracking-wide">Drone Photography</h5>
+            <p className="text-stone-300 text-sm font-normal leading-tight pt-3">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
             <PrimaryButton>
               Read More
             </PrimaryButton>
           </div>
           <div className={classes.wildlifePhotography}>
-            <h5>Wildlife Photography</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
+            <h5 className="text-white uppercase text-sm font-normal leading-tight tracking-wide">Wildlife Photography</h5>
+            <p className="text-stone-300 text-sm font-normal leading-tight pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
             <PrimaryButton>
               Read More
             </PrimaryButton>
