@@ -66,9 +66,40 @@ export default function Home() {
               Read More
             </PrimaryButton>
           </div>
-
         </div>
       </section>
+    
+    {/* Section 2 */}
+
+    <section className="mt-[100px]">
+      <div className={classes.mountain}>
+        <div>
+          <h3 className="text-white text-sm font-normal leading-tight tracking-widest">Sunset at Mount Fuji</h3>
+          <p className="text-stone-300 text-sm font-normal leading-tight w-[298px]">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
+        </div>
+      </div>
+
+      <div className="flex justify-between items-center">
+        <div className="pl-[100px]">
+          <h3 className="text-stone-300 text-sm font-normal uppercase leading-tight tracking-widest">The Gear cage</h3>
+          <h2 className="text-white text-[28px] font-normal leading-loose mb-[14px] mt-[6px]">The tools that we use.</h2>
+          <p className="text-white text-sm font-normal leading-tight w-[514px] mb-5">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</p>
+          <PrimaryButton>
+            Check it out
+          </PrimaryButton>
+        </div>
+        <div>
+          <Image src="/cameras.png" width={720} height={540} alt="cameras" />
+        </div>
+      </div>
+
+      <div className={classes.leafs}>
+        <div>
+          <h3 className="text-white text-sm font-normal leading-tight tracking-widest uppercase">Monstera Leafs</h3>
+          <p className="text-stone-300 text-sm font-normal leading-tight w-[273px]">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
+        </div>
+      </div>
+    </section>
    </main>
    </>
   );

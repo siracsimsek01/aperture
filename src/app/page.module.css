@@ -63,10 +63,22 @@
     background: url(../../public/mountain.png) no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 40vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    padding-right: 30px;
+    padding-right: 60px;
+}
+
+.leafs {
+    background: url(../../public/leafs.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 60px;
 }
