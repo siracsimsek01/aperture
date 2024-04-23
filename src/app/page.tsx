@@ -100,7 +100,44 @@ export default function Home() {
         </div>
       </div>
     </section>
+
+    <section className="flex flex-col justify-center items-center h-[50vh]">
+      <div className="text-center">
+        <h1 className="text-white text-[40px] font-normal leading-[42px]">Past clients</h1>
+        <h3 className="text-stone-300 text-2xl font-normal leading-[30px] py-4">Trusted by your favorite companies</h3>
+      </div>
+      <div className="inline-flex justify-around items-center w-full mt-10">
+        <Image src="/client-1.png" width={128} height={30} alt="client-1" />
+        <Image src="/client-2.png" width={128} height={30} alt="client-2" />
+        <Image src="/client-3.png" width={128} height={30} alt="client-3" />
+        <Image src="/client-4.png" width={128} height={30} alt="client-4" />
+        <Image src="/client-5.png" width={128} height={30} alt="client-5" />
+      </div>
+    </section>
+
+    <section>
+      <div className={classes.starfall}>
+        <div>
+        <h3 className="text-white text-sm font-normal leading-tight tracking-widest uppercase">Star fall in himalayas</h3>
+          <p className="text-stone-300 text-sm font-normal leading-tight w-[273px]">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div className="flex flex-col justify-center items-center gap-2 w-full h-[50vh]">
+      <h1 className="text-center text-white text-4xl font-normal leading-10">Need help with photography <br /> or videography?</h1>
+      <h2 className="text-stone-300 text-2xl font-normal leading-loose text-center">We're here for you</h2>
+      <PrimaryButton>
+        Get in Touch
+      </PrimaryButton>
+      </div>
+    </section>
    </main>
+
+   <footer>
+    
+   </footer>
    </>
   );
 }
