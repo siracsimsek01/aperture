@@ -137,9 +137,7 @@ export default function Home() {
       </main>
 
       <footer>
-        <div className="py-[100px] px-[136px] flex justify-between">
-
-
+        <div className="py-[100px] px-[200px] flex justify-around">
         <div>
           <Image src="/logo.svg" width={128} height={31} alt="logo" />
           <p className="text-stone-300 text-xs font-normal leading-tight mt-5">Photographers & videographers capturing the world around us.</p>
@@ -173,7 +171,7 @@ export default function Home() {
           </div>
           <div className="relative">
             <input type="text" placeholder="Your email address" className="w-96 h-12 rounded-xl p-4 border-none outline-none text-black"/>
-            <button className="absolute left-[16.8rem] top-1 text-white bg-black px-4 py-2 rounded-xl">Subscribe</button>
+            <button className="absolute left-[16.8rem] top-1 text-white bg-black px-4 py-2 rounded-xl hover:bg-blue-500 transition-colors duration-300">Subscribe</button>
           </div>
         </div>
         <span className="w-[1168px] h-0.5 bg-white  flex items-center justify-center"></span>
@@ -181,7 +179,17 @@ export default function Home() {
 
         <div className="flex justify-around items-center h-[20vh]">
           <p className="text-stone-300 text-xs font-normal leading-tight text-left">© 2024 Aperture Studios. All rights reserved.</p>
-          
+          <div className="flex">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="text-white text-2xl mx-2 hover:text-blue-500 transition-colors duration-300 cursor-pointer"/>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-white text-2xl mx-2 hover:text-red-500 transition-colors duration-300 cursor-pointer"/>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="text-white text-2xl mx-2  hover:text-blue-500 transition-colors duration-300 cursor-pointer"/>
+            </a>
+          </div>
         </div>
       </footer>
     </>
