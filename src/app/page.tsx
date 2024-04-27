@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import classes from "./page.module.css";
 import { PrimaryButton } from "./components/common/Buttons";
+import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -135,7 +136,10 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="py-[100px] px-[136px] flex justify-between">
+      <footer>
+        <div className="py-[100px] px-[136px] flex justify-between">
+
+
         <div>
           <Image src="/logo.svg" width={128} height={31} alt="logo" />
           <p className="text-stone-300 text-xs font-normal leading-tight mt-5">Photographers & videographers capturing the world around us.</p>
@@ -157,6 +161,27 @@ export default function Home() {
             <Link href="/">Instructions</Link>
             <Link href="/">Changelog</Link>
           </div>
+        </div>
+        </div>
+
+      <div className="w-full flex flex-col justify-center items-center">
+        <span className="w-[1168px] h-0.5 bg-white block"></span>
+        <div className="flex justify-around px-28 items-center w-full py-10">
+          <div>
+            <h3 className="text-white text-sm font-normal uppercase leading-tight tracking-widest pb-5">SUBSCRIBE TO OUR NEWSLETTER</h3>
+            <p className="text-stone-300 text-xs font-normal leading-tight">Read about all the things we do.</p>
+          </div>
+          <div className="relative">
+            <input type="text" placeholder="Your email address" className="w-96 h-12 rounded-xl p-4 border-none outline-none text-black"/>
+            <button className="absolute left-[16.8rem] top-1 text-white bg-black px-4 py-2 rounded-xl">Subscribe</button>
+          </div>
+        </div>
+        <span className="w-[1168px] h-0.5 bg-white  flex items-center justify-center"></span>
+        </div>
+
+        <div className="flex justify-around items-center h-[20vh]">
+          <p className="text-stone-300 text-xs font-normal leading-tight text-left">© 2024 Aperture Studios. All rights reserved.</p>
+          
         </div>
       </footer>
     </>
