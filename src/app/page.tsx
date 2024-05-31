@@ -1,23 +1,46 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./page.module.css";
 import { PrimaryButton } from "./components/common/Buttons";
-import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaFacebook, FaBars } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <>
       {/* Navbar */}
-      <nav className="inline-flex md:justify-around w-full mt-8">
+      <nav className="inline-flex justify-around w-full mt-8">
         <Image src={"/logo.svg"} width={128} height={31} alt={"logo"} className="" />
 
-        <div className="inline-flex md:gap-14 items-center">
+        <div className="hidden md:inline-flex md:gap-14 items-center">
           <Link href="/">Businnes areas</Link>
           <Link href="/">Featured Images</Link>
           <Link href="/">Gear cage</Link>
           <Link href="/">Contact</Link>
           <button className="px-5 py-3 bg-white text-black rounded-xl inline-flex items-center">Get template</button>
         </div>
+
+        <button onClick={toggleMenu}>
+          <FaBars className="text-white text-2xl md:hidden" />
+        </button>
+
+        {isOpen && (
+          <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center gap-4">
+            <Link href="/">Businnes areas</Link>
+            <Link href="/">Featured Images</Link>
+            <Link href="/">Gear cage</Link>
+            <Link href="/">Contact</Link>
+            <button className="px-5 py-3 bg-white text-black rounded-xl inline-flex items-center">Get template</button>
+          </div>
+        )}
       </nav>
 
       {/* Header */}
@@ -25,8 +48,8 @@ export default function Home() {
       <header className={classes.header}>
         <div className="flex flex-col justify-end items-center text-center">
           <h3 className="text-center text-stone-300 text-sm font-normal uppercase leading-tight tracking-widest">Photographer & Filmmaker</h3>
-          <h2 className="text-center text-white text-[54px] font-normal">Aperture Studios</h2>
-          <p className="w-[580px] text-center text-stone-300 text-sm font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          <h2 className="text-center text-white text-3xl md:text-[54px] font-normal">Aperture Studios</h2>
+          <p className=" text-center text-stone-300 text-sm font-normal">Lorem ipsum dolor sit, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
         </div>
       </header>
 
